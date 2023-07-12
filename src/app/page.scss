@@ -1,0 +1,118 @@
+@import "./variables.scss";
+
+.home {
+    min-height: 200vh;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 8rem;
+    z-index: 9;
+
+    @media screen and (max-width: $sm-screen) {
+        padding: 0;
+    }
+
+    &__curtain {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $primary;
+        z-index: 10;
+        animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-out-top-right both;
+    }
+
+    &__title {
+        position: fixed;
+        min-height: 100vh;
+        width: 100vw;
+        top: 25%;
+        z-index: 10;
+        padding: 0 5rem;
+
+        h1 {
+            color: $black;
+            text-shadow: $primary-highlight;
+            font-size: 8rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            
+            @media screen and (max-width: $sm-screen) {
+                font-size: 5rem;
+            }
+        }
+
+        p {
+            margin-bottom: 8rem;
+            font-weight: 300;
+            color: $white;
+            font-size: 1rem;
+
+            @media screen and (max-width: $sm-screen) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 100%;
+        min-height: 100vh;
+        width: 100%;
+        margin-top: 300vh;
+        z-index: 10;
+
+        h4 {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: $white;
+            width: 70%;
+            margin: auto;
+
+            @media screen and (max-width: $sm-screen) {
+                font-size: 1rem;
+            }
+        }
+
+        h3 {
+            color: $primary;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+        }
+
+        &-item {
+            margin: 50vh 0;
+            padding: 10rem 10rem;
+            background-color: $black-opaque;
+            border-radius: 5px;
+
+            &:last-of-type {
+                margin-bottom: 10vh;
+            }
+
+            @media screen and (max-width: $md-screen) {
+                padding: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+
+                &:last-of-type {
+                    margin-bottom: 30vh;
+                }
+            }
+
+            @media screen and (max-width: $sm-screen) {
+                &:last-of-type {
+                    margin-bottom: 35vh;
+                }
+            }
+        }
+    }
+}

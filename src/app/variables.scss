@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
+$font: "Fira Sans", sans-serif;
+
+$black: #333333;
+$grey: #646464;
+$grey-light: #b3b3b3;
+$white: #fffef9;
+$primary: #ffd369;
+$black-opaque: #333333a5;
+
+$lg-screen: 1100px;
+$md-screen: 950px;
+$sm-screen: 750px;
+
+$primary-highlight:
+    -1px 5px 0 $primary,
+    1px 1px 0 $primary,
+    1px -1px 0 $primary,
+    -1px -1px 0 $primary;
+
+// font-sizes
+$h1: 3.5rem;
+$h2: 2rem;
+$h3: 1.1rem;
+$h4: 0.9rem;
+$p-subtitle: 0.7rem;
+
+// animations
+@keyframes wipe-in-down {
+    from {
+        clip-path: inset(0 0 100% 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes wipe-in-right {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes circle-out-top-right {
+    from {
+        clip-path: circle(125%);
+    }
+    to {
+        clip-path: circle(0% at top right);
+    }
+}
+
+@keyframes circle-in-hesitate {
+    0% {
+        clip-path: circle(0%);
+    }
+    40% {
+        clip-path: circle(40%);
+    }
+    100% {
+        clip-path: circle(125%);
+    }
+}
+
+@keyframes square-in-top-left {
+    from {
+        clip-path: inset(100% 0 0 100%);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}

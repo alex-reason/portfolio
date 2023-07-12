@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.social-item {
+    padding: 1rem;
+
+    @media screen and (max-width: $sm-screen) {
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+
+    svg {
+        font-size: 3rem;
+        cursor: pointer;
+
+        @media screen and (max-width: $sm-screen) {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

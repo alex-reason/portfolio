@@ -1,0 +1,100 @@
+@import "./variables.scss";
+
+.globals {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    background-color: $white;
+
+    @media screen and (max-width: $sm-screen) {
+        font-size: 90%;
+    }
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    color: $black;
+    display: inline-block;
+}
+
+.btn {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid $primary;
+    border-radius: 30px;
+    background-color: $black;
+    color: $white;
+    font-weight: 300;
+    font-family: $font;
+    font-size: 1rem;
+
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-0.1rem);
+        font-weight: 500;
+    }
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+
+    &__content {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 5px solid transparent;
+        border-top-color: $primary;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

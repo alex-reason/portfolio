@@ -1,0 +1,74 @@
+@import "../../variables.scss";
+.experience-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 80%;
+    margin-left: auto;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #b3b3b313;
+
+    @media screen and (max-width: $sm-screen) {
+        width: 90%;
+    }
+
+    &:hover {
+        h2 {
+            color: $primary;
+        }
+    }
+
+    h2,
+    p {
+        text-align: right;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1rem;
+        border-radius: 5px;
+      
+        width: fit-content;
+    }
+
+    h3 {
+        font-weight: 300;
+        color: $white;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        margin: 0;
+        padding: 0.2rem 1rem;
+        font-weight: 400;
+
+        @media screen and (max-width: $sm-screen) {
+            margin: 0;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        padding: 1rem 0;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+            text-align: justify;
+        }
+    }
+
+    .invisible {
+        display: none;
+    }
+
+  
+    .bold {
+        font-weight: 700;
+    }
+}

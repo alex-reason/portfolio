@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 1.5rem;
+    
+    .btn {
+        margin-right: 1rem;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
