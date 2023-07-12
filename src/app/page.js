@@ -33,17 +33,17 @@ const Home = () => {
       <animated.div
         className='home__title'
         style={{
-          transform: `scale(${scrollVal / 1.5}) `,
+          transform: `scale(${scrollVal / 1.5})`,
           opacity: 1.9 - scrollVal
         }}
       >
-        <h1>Hi, I'm Alexandra</h1>
+        <h1>Hi, I&apos;m Alexandra</h1>
         <p style={{ opacity: `${(scrollVal * 100) - 90}%` }}>Front-end web development, research, language enthusiast.</p>
       </animated.div>
 
       <animated.div className='home__details'>
         {landingData && landingData.map((landingItem) => (
-          <div className='home__details-item'>
+          <div className='home__details-item' key={landingItem.title}>
             <h3>{landingItem.title}</h3>
             <h4>{landingItem.content}</h4>
           </div>
