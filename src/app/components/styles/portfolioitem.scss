@@ -45,10 +45,6 @@
 }
 
 .portfolio-item-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 0 3rem;
     min-height: 100vh;
 
@@ -73,6 +69,7 @@
         color: $black;
         font-weight: 300;
         width: 80%;
+        text-align: center;
 
         @media screen and (max-width: $sm-screen) {
             width: 100%;
