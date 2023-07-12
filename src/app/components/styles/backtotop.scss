@@ -3,7 +3,7 @@
 .back-to-top {
     position: fixed;
     bottom: .5rem;
-    right: .5rem;
+    right: 1rem;
     width: 5.5rem;
     height: 2rem;
     background-color: $primary;
@@ -19,6 +19,5 @@
 
     @media screen and (max-width: $sm-screen){
         bottom: 4.5rem;
-       
     }
 }
