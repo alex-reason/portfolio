@@ -7,10 +7,6 @@
     box-sizing: border-box;
     font-family: $font;
     background-color: $white;
-
-    @media screen and (max-width: $sm-screen) {
-        font-size: 90%;
-    }
 }
 
 ul,

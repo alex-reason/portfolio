@@ -9,6 +9,10 @@
 
     h3 {
         font-size: $h3;
+
+        @media screen and (max-width: $sm-screen) {
+            font-size: $h4;
+        }
     }
 
     h4 {
