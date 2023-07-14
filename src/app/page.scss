@@ -117,8 +117,8 @@
 
             @media screen and (max-width: $sm-screen) {
                 &:last-of-type {
-                    margin-bottom: 35vh;
-                    padding-bottom: 30vh;
+                    margin-bottom: 15vh;
+                    padding: 30vh 1rem;
                 }
             }
         }
