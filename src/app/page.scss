@@ -25,6 +25,12 @@
         animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-out-top-right both;
     }
 
+    svg {
+        fill: $white;
+        position: fixed;
+        bottom: 12rem;
+    }
+
     &__title {
         position: fixed;
         min-height: 100vh;
@@ -39,7 +45,7 @@
             font-size: 8rem;
             margin-bottom: 0;
             padding-bottom: 0;
-            
+
             @media screen and (max-width: $sm-screen) {
                 font-size: 5rem;
             }
@@ -64,7 +70,7 @@
         opacity: 100%;
         min-height: 100vh;
         width: 100%;
-        margin-top: 300vh;
+        margin-top: 400vh;
         z-index: 10;
 
         h4 {
@@ -96,6 +102,7 @@
 
             &:last-of-type {
                 margin-bottom: 10vh;
+                background-color: $black;
             }
 
             @media screen and (max-width: $md-screen) {
@@ -111,6 +118,7 @@
             @media screen and (max-width: $sm-screen) {
                 &:last-of-type {
                     margin-bottom: 35vh;
+                    padding-bottom: 10vh;
                 }
             }
         }
