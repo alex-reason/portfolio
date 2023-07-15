@@ -7,7 +7,7 @@ import { certData, experienceData, skillsData, img3, img5 } from "@/assets/data"
 import './competencies.scss';
 
 const Competencies = () => {
-    const [currentImg, setCurrentImg] = useState(img3);
+    // const [currentImg, setCurrentImg] = useState(img3);
     const [currentTitle, setCurrentTitle] = useState('');
 
     const scrollToTop = () => {
@@ -26,15 +26,15 @@ const Competencies = () => {
         const changeTitle = () => {
             if (expDivIsVisible && !certDivIsVisible && !skillDivIsVisible) {
                 setCurrentTitle('Experience')
-                setCurrentImg(img5)
+                // setCurrentImg(img5)
             }
             if (certDivIsVisible && !expDivIsVisible && !skillDivIsVisible) {
                 setCurrentTitle('Certificates')
-                setCurrentImg(img3)
+                // setCurrentImg(img3)
             }
             if (skillDivIsVisible && !expDivIsVisible && !certDivIsVisible) {
                 setCurrentTitle('Skills')
-                setCurrentImg(null)
+                // setCurrentImg(null)
             }
         }
         return changeTitle()
@@ -49,7 +49,7 @@ const Competencies = () => {
             <div className='certificates' ref={certRef}>
                 {certData && certData.map((certItem) => (<CertificateItem certData={certItem} key={certItem.id} />))}
             </div>
-            {currentImg && <Image className='competencies__img' src={currentImg} alt='illustration from blush.com' />}
+            {/* {currentImg && <Image className='competencies__img' src={currentImg} alt='illustration from blush.com' />} */}
             <div className={expDivIsVisible ? 'experiences competencies__active' : 'experiences competencies__inactive'} ref={expRef}>
                 {experienceData && experienceData.map((expItem) => (<ExperienceItem expData={expItem} key={expItem.id} />))}
             </div>

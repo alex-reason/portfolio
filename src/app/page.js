@@ -1,5 +1,4 @@
 "use client";
-import Head from "next/head";
 import { useScroll, animated } from "@react-spring/web";
 import { useState, useEffect } from "react";
 import { landingData } from "../assets/data";
@@ -27,42 +26,38 @@ const Home = () => {
     }
   });
 
+
   return (
-    <>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400&display=swap" rel="stylesheet"></link>
-      </Head>
+    <div className='home'>
+      <div className='home__curtain' />
+      <animated.div
+        className='home__title'
+        style={{
+          transform: `scale(${scrollVal / 2})`,
+          opacity: 1.9 - scrollVal
+        }}
+      >
+        <h1>Hi, I&apos;m Alexandra</h1>
+        <p style={{ opacity: `${(scrollVal * 100) - 50}%` }}>Front-end web development, research, language enthusiast.</p>
+      </animated.div>
 
-      <div className='home'>
-        <div className='home__curtain' />
-        <animated.div
-          className='home__title'
-          style={{
-            transform: `scale(${scrollVal / 1.5})`,
-            opacity: 1.9 - scrollVal
-          }}
-        >
-          <h1>Hi, I&apos;m Alexandra</h1>
-          <p style={{ opacity: `${(scrollVal * 100) - 90}%` }}>Front-end web development, research, language enthusiast.</p>
-        </animated.div>
-
-        <ArrowDown alt='scroll down' />
-
-        <animated.div className='home__details'>
-          {landingData && landingData.map((landingItem) => (
-            <div className='home__details-item' key={landingItem.title}>
-              <h3>{landingItem.title}</h3>
-              <h4>{landingItem.content}</h4>
-            </div>
-          ))}
-
-        </animated.div>
-        <BackToTop backToTopHandler={scrollToTop} />
-        <Navbar />
+      <div className='home__arrow'>
+        <ArrowDown alt='scroll down' /><p>scroll down</p>
       </div>
-    </>
+
+
+      <animated.div className='home__details'>
+        {landingData && landingData.map((landingItem) => (
+          <div className='home__details-item' key={landingItem.title}>
+            <h3>{landingItem.title}</h3>
+            <h4>{landingItem.content}</h4>
+          </div>
+        ))}
+
+      </animated.div>
+      <BackToTop backToTopHandler={scrollToTop} />
+      <Navbar />
+    </div>
   );
 }
 
