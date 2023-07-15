@@ -111,7 +111,7 @@ const experienceData = [
     {
         id: 'experience1',
         label: 'Paralegal',
-        minorContent: 'Tancinco Law PC. From September 2020',
+        minorContent: 'Tancinco Law PC. From September 2020 - present',
         content: [
             'Works on around 10-20 immigration related cases a week with minimal supervision from the attorneys.',
             'Uses AWS and other web services to efficiently file applications.',
