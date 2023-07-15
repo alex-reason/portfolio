@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { portfolioData } from '@/assets/data-portfolio';
-import { PortfolioItem, PortfolioItemDetails, Navbar, BackToTop, HomeLink } from '../components';
+import { PortfolioItem, PortfolioItemDetails, Navbar, BackToTop, HomeLink, Footer } from '../components';
 import './portfolio.scss';
 
 const Portfolio = () => {
@@ -31,24 +31,28 @@ const Portfolio = () => {
   };
 
   return (
-    <div className='portfolio'>
-      <div className='portfolio__summary'>
-        {portfolioData && portfolioData.map(portItem => (
-          <PortfolioItem portData={portItem} clickHandler={handlePortfolioItemClick} key={portItem.title} />
-        ))}
-      </div>
-      <div className='portfolio__details'>
-        {
-          portfolioData[currentPorfolio].details.map(detail => (
-            <PortfolioItemDetails data={detail} key={detail.detailImgAlt} />
-          ))
-        }
-      </div>
-      <HomeLink />
-      <Navbar />
-      <BackToTop backToTopHandler={handleScrollToTop} />
-    </div>
+    <>
+      <div className='portfolio'>
+        <div className='portfolio__summary'>
+          {portfolioData && portfolioData.map(portItem => (
+            <PortfolioItem portData={portItem} clickHandler={handlePortfolioItemClick} key={portItem.title} />
+          ))}
+        </div>
+        <div className='portfolio__details'>
+          {
+            portfolioData[currentPorfolio].details.map(detail => (
+              <PortfolioItemDetails data={detail} key={detail.detailImgAlt} />
+            ))
+          }
 
+        </div>
+        <HomeLink />
+        <Navbar />
+        <BackToTop backToTopHandler={handleScrollToTop} />
+
+      </div>
+      <Footer />
+    </>
   )
 }
 

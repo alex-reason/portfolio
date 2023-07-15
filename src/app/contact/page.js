@@ -1,4 +1,4 @@
-import { SocialItem, Navbar, HomeLink } from '../components';
+import { SocialItem, Navbar, HomeLink, Footer } from '../components';
 import { socialData } from '@/assets/data';
 import './contact.scss';
 
@@ -18,11 +18,13 @@ const Contact = () => {
                     <div className='contact__socials'>
                         <h4>Let&apos;s connect!</h4>
                         <div className='contact__socials-container'>
-                            {socialData.map(socItem => (<SocialItem socData={socItem} key={socItem.id}/>))}
+                            {socialData.map(socItem => (<SocialItem socData={socItem} key={socItem.id} />))}
                         </div>
                     </div>
                 </div>
+               
             </div>
+            <Footer />
         </>
     )
 }

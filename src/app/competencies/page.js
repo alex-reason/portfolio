@@ -2,12 +2,11 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { ExperienceItem, CertificateItem, SkillsItem, BackToTop, HomeLink, Navbar } from "../components";
-import { certData, experienceData, skillsData, img3, img5 } from "@/assets/data";
+import { ExperienceItem, CertificateItem, SkillsItem, BackToTop, HomeLink, Navbar, Footer } from "../components";
+import { certData, experienceData, skillsData } from "@/assets/data";
 import './competencies.scss';
 
 const Competencies = () => {
-    // const [currentImg, setCurrentImg] = useState(img3);
     const [currentTitle, setCurrentTitle] = useState('');
 
     const scrollToTop = () => {
@@ -26,20 +25,16 @@ const Competencies = () => {
         const changeTitle = () => {
             if (expDivIsVisible && !certDivIsVisible && !skillDivIsVisible) {
                 setCurrentTitle('Experience')
-                // setCurrentImg(img5)
             }
             if (certDivIsVisible && !expDivIsVisible && !skillDivIsVisible) {
                 setCurrentTitle('Certificates')
-                // setCurrentImg(img3)
             }
             if (skillDivIsVisible && !expDivIsVisible && !certDivIsVisible) {
                 setCurrentTitle('Skills')
-                // setCurrentImg(null)
             }
         }
         return changeTitle()
     }, [expDivIsVisible, certDivIsVisible, skillDivIsVisible])
-
 
     return (
         <div className='competencies'>
@@ -62,6 +57,7 @@ const Competencies = () => {
 
             </div>
             <BackToTop backToTopHandler={scrollToTop} />
+            <Footer />
         </div>
     )
 };

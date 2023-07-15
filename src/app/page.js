@@ -2,7 +2,7 @@
 import { useScroll, animated } from "@react-spring/web";
 import { useState, useEffect } from "react";
 import { landingData } from "../assets/data";
-import { BackToTop, Navbar } from "./components";
+import { BackToTop, Navbar, Footer } from "./components";
 import ArrowDown from '../assets/icons/arrow-down.svg';
 import './page.scss';
 
@@ -57,6 +57,7 @@ const Home = () => {
       </animated.div>
       <BackToTop backToTopHandler={scrollToTop} />
       <Navbar />
+      <Footer />
     </div>
   );
 }
