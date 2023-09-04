@@ -78,6 +78,7 @@ const portfolioData = [
         image: proj2Pg2,
         title: 'Sticky Notes',
         isActive: false,
+        code: 'https://github.com/alex-reason/sticky-notes',
         details: [
             {
                 detailImg: proj2Pg1,

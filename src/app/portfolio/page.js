@@ -40,6 +40,7 @@ const Portfolio = () => {
         </div>
         <div className='portfolio__details'>
           {portfolioData[currentPorfolio].url && (<a className='btn' target="_blank" rel='noopener noreferrer' href={portfolioData[currentPorfolio].url}>View project</a>) }
+          {portfolioData[currentPorfolio].code && (<a className='btn' target="_blank" rel='noopener noreferrer' href={portfolioData[currentPorfolio].code}>View Code in github</a>) }
           {
             portfolioData[currentPorfolio].details.map(detail => (
               <PortfolioItemDetails data={detail} key={detail.detailImgAlt} />
