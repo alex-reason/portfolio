@@ -44,7 +44,7 @@ const Portfolio = () => {
               <PortfolioItemDetails data={detail} key={detail.detailImgAlt} />
             ))
           }
-
+          <a href='https://fitness-tracker-ffa4d.web.app/'>View project</a>
         </div>
         <HomeLink />
         <Navbar />
