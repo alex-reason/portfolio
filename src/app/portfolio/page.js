@@ -39,7 +39,7 @@ const Portfolio = () => {
           ))}
         </div>
         <div className='portfolio__details'>
-          <a className='btn' href='https://fitness-tracker-ffa4d.web.app/'  target="_blank" rel='noopener noreferrer'>View project</a>
+          {portfolioData[currentPorfolio].url && (<a className='btn' target="_blank" rel='noopener noreferrer' href={portfolioData[currentPorfolio].url}>View project</a>) }
           {
             portfolioData[currentPorfolio].details.map(detail => (
               <PortfolioItemDetails data={detail} key={detail.detailImgAlt} />

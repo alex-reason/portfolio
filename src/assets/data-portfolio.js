@@ -28,6 +28,7 @@ const portfolioData = [
         image: proj1Pg1,
         title: 'Fitness Tracker',
         isActive: true,
+        url: 'https://fitness-tracker-ffa4d.web.app/',
         details: [
             {
                 detailImg: proj1Pg2,
@@ -109,6 +110,7 @@ const portfolioData = [
         image: proj3Pg3,
         title: 'Cozy Videos',
         isActive: false,
+        url: 'https://willowy-clafoutis-50448b.netlify.app/',
         details: [
             {
                 detailImg: proj3Pg1,
@@ -131,6 +133,7 @@ const portfolioData = [
         image: proj4Pg3,
         title: 'Art Portfolio',
         isActive: false,
+        url: 'https://alex-reason.github.io/vince-reasonda/',
         details: [
             {
                 detailImg: proj4Pg1,
