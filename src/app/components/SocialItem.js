@@ -1,10 +1,10 @@
-import'./styles/socialitem.scss'
+import './styles/socialitem.scss'
 
-const SocialItem = ({socData}) => {
+const SocialItem = ({ socData }) => {
   return (
-    <div className='social-item'>
-        {socData.icon}
-    </div>
+    <a className='social-item' href={socData.url}>
+      {socData.icon}
+    </a>
   )
 }
 

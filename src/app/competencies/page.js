@@ -44,7 +44,7 @@ const Competencies = () => {
             <div className='certificates' ref={certRef}>
                 {certData && certData.map((certItem) => (<CertificateItem certData={certItem} key={certItem.id} />))}
             </div>
-            {/* {currentImg && <Image className='competencies__img' src={currentImg} alt='illustration from blush.com' />} */}
+
             <div className={expDivIsVisible ? 'experiences competencies__active' : 'experiences competencies__inactive'} ref={expRef}>
                 {experienceData && experienceData.map((expItem) => (<ExperienceItem expData={expItem} key={expItem.id} />))}
             </div>
