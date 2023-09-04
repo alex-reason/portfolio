@@ -75,6 +75,10 @@
         .btn {
             background-color: $white;
             color: $black;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             &:hover {
                 background-color: $primary;

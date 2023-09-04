@@ -2,7 +2,7 @@
 
 .back-to-top {
     position: fixed;
-    bottom: .5rem;
+    bottom: 1rem;
     right: 1rem;
     width: 5.5rem;
     height: 2rem;
@@ -19,5 +19,6 @@
 
     @media screen and (max-width: $sm-screen){
         bottom: 4.5rem;
+        right: 1.5rem;
     }
 }
