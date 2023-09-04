@@ -51,6 +51,7 @@
         scrollbar-width: thin;
         scrollbar-color: $white $grey;
         height: 90vh;
+        padding-top: 5vh;
 
         @media screen and (max-width: $sm-screen) {
             width: 100%;
@@ -58,6 +59,7 @@
             animation: none;
             overflow-x: auto;
             padding: 0;
+            padding-top: 5vh;
         }
 
         &::-webkit-scrollbar {
@@ -73,6 +75,10 @@
         .btn {
             background-color: $white;
             color: $black;
+
+            &:hover {
+                background-color: $primary;
+            }
         }
     }
 }
