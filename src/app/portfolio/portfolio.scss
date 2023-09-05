@@ -80,9 +80,14 @@
             justify-content: center;
             align-items: center;
             margin: auto;
+            text-align: center;
 
             &:hover {
                 background-color: $primary;
+            }
+
+            @media screen and (max-width: $sm-screen) {
+                width: 45%;
             }
         }
     }
