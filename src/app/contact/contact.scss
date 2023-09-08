@@ -1,4 +1,4 @@
-@import '../variables.scss';    
+@import "../variables.scss";
 
 .contact {
     display: flex;
@@ -51,6 +51,7 @@
 
     &__email {
         display: flex;
+        align-items: center;
         h4 {
             margin-left: 1rem;
         }
