@@ -1,5 +1,7 @@
 import { SocialItem, Navbar, HomeLink, Footer } from '../components';
+import { VscMail } from 'react-icons/vsc';
 import { socialData } from '@/assets/data';
+import Link from 'next/link';
 import './contact.scss';
 
 const Contact = () => {
@@ -10,10 +12,10 @@ const Contact = () => {
             <div className='contact'>
                 <h2>Reach out</h2>
                 <div className='contact__container'>
-                    <div className='contact__email'>
-                        <h4>Contact me</h4>
-                        <p>momai.reason@gmail.com</p>
-                    </div>
+                    <Link className='contact__email' href={'mailto:alexandrareasonda@gmail.com'}>
+                        <VscMail />
+                        <h4>Email me</h4>
+                    </Link>
 
                     <div className='contact__socials'>
                         <h4>Let&apos;s connect!</h4>
@@ -22,7 +24,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-               
+
             </div>
             <Footer />
         </>

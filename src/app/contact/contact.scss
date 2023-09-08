@@ -49,6 +49,13 @@
         }
     }
 
+    &__email {
+        display: flex;
+        h4 {
+            margin-left: 1rem;
+        }
+    }
+
     &__socials {
         display: flex;
         flex-direction: column;
