@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { ExperienceItem, CertificateItem, SkillsItem, BackToTop, HomeLink, Navbar, Footer } from "../components";
