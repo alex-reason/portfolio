@@ -18,15 +18,15 @@ const Navbar = () => {
 
   return (
     <nav className='nav navbar'>
-        <Link className='btn' href='/contact' passHref>
-          contact
-        </Link>
-        <Link className='btn' href='/competencies'>
-          competencies
-        </Link>
-        <Link className='btn' href='/portfolio'>
-          portfolio
-        </Link>
+      <Link className='btn' href='/portfolio'>
+        portfolio
+      </Link>
+      <Link className='btn' href='/competencies'>
+        competencies
+      </Link>
+      <Link className='btn' href='/contact' passHref>
+        contact
+      </Link>
     </nav>
   )
 }
