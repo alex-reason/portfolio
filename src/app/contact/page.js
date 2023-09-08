@@ -17,7 +17,7 @@ const Contact = () => {
                             <VscMail />
                             <h4>Email me</h4>
                         </a>
-                        <a className='contact__email' href='tinyurl.com/alex-reason-resume' target="_blank" rel='noopener noreferrer'>
+                        <a className='contact__email' href='http://www.tinyurl.com/alex-reason-resume' target="_blank" rel='noopener noreferrer'>
                             <HiOutlineNewspaper />
                             <h4>My Resume</h4>
                         </a>
