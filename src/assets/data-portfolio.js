@@ -23,7 +23,22 @@ import proj4Pg1 from './portfolio-details/portfolio4/proj4-pg1.png';
 import proj4Pg2 from './portfolio-details/portfolio4/proj4-pg2.png';
 import proj4Pg3 from './portfolio-details/portfolio4/proj4-pg3.png';
 
+import proj5Pg1 from './portfolio-details/portfolio5/proj5-pg1.png';
+
 const portfolioData = [
+    {
+        title: 'My Portfolio site',
+        isActive: true,
+        code: 'https://github.com/alex-reason/portfolio',
+        details: [
+            {
+                detailImg: proj5Pg1,
+                detailInfo: 'This responsive portfolio website was created with react, Next.js, and vercel. The code is on github, and I manage changes, version control, and updates via Git. Routing is done via Next.js 13 App Router. The styling uses SASS, animations, and variables for reusability.',
+                detailImgAlt: 'my responsive web app homepage',
+            },
+        ]
+    },
+
     {
         image: proj1Pg1,
         title: 'Fitness Tracker',
@@ -138,7 +153,7 @@ const portfolioData = [
         details: [
             {
                 detailImg: proj4Pg1,
-                detailInfo:' A simple portfolio website I made for my brother.  Plain html and javascript, and SCSS.',
+                detailInfo: ' A simple portfolio website I made for my brother.  Plain html and javascript, and SCSS.',
                 detailImgAlt: 'art portfolio landing section',
             },
             {
