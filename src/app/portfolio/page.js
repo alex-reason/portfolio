@@ -21,7 +21,7 @@ const Portfolio = () => {
       left: 0,
       behavior: "smooth",
     });
-  }
+  };
 
   const handlePortfolioItemClick = (item) => {
     setCurrentPortfolio(portfolioData.indexOf(item));
@@ -39,8 +39,8 @@ const Portfolio = () => {
           ))}
         </div>
         <div className='portfolio__details'>
-          {portfolioData[currentPorfolio].url && (<a className='btn' target="_blank" rel='noopener noreferrer' href={portfolioData[currentPorfolio].url}>View project</a>) }
-          {portfolioData[currentPorfolio].code && (<a className='btn' target="_blank" rel='noopener noreferrer' href={portfolioData[currentPorfolio].code}>View Code in github</a>) }
+          {portfolioData[currentPorfolio].url && (<a className='btn' target="_blank" rel='noopener noreferrer' href={portfolioData[currentPorfolio].url}>View project</a>)}
+          {portfolioData[currentPorfolio].code && (<a className='btn' target="_blank" rel='noopener noreferrer' href={portfolioData[currentPorfolio].code}>View Code in github</a>)}
           {
             portfolioData[currentPorfolio].details.map(detail => (
               <PortfolioItemDetails data={detail} key={detail.detailImgAlt} />
@@ -56,6 +56,6 @@ const Portfolio = () => {
       <Footer />
     </>
   )
-}
+};
 
-export default Portfolio
+export default Portfolio;

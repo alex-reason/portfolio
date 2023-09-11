@@ -1,6 +1,5 @@
+import Link from "next/link";
 import './styles/homelink.scss';
-
-import Link from "next/link"
 
 const HomeLink = () => {
   return (
@@ -8,6 +7,6 @@ const HomeLink = () => {
         <Link href='/'>alexandra</Link>
     </div>
   )
-}
+};
 
-export default HomeLink
+export default HomeLink;

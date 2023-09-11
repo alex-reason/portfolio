@@ -33,7 +33,7 @@ const Competencies = () => {
             }
         }
         return changeTitle()
-    }, [expDivIsVisible, certDivIsVisible, skillDivIsVisible])
+    }, [expDivIsVisible, certDivIsVisible, skillDivIsVisible]);
 
     return (
         <div className='competencies'>

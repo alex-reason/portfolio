@@ -1,12 +1,12 @@
-import './globals.scss'
-import { Inter } from 'next/font/google'
+import './globals.scss';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Alexandra',
   description: 'my personal website created with NextJS',
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -14,4 +14,4 @@ export default function RootLayout({ children }) {
       <body className='globals'>{children}</body>
     </html>
   )
-}
+};

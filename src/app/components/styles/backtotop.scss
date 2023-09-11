@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .back-to-top {
     position: fixed;
@@ -14,10 +14,10 @@
     align-items: center;
     z-index: 25;
     border-radius: 4px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     cursor: pointer;
 
-    @media screen and (max-width: $sm-screen){
+    @media screen and (max-width: $sm-screen) {
         bottom: 4.5rem;
         right: 1.5rem;
     }

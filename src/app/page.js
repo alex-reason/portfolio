@@ -26,7 +26,6 @@ const Home = () => {
     }
   });
 
-
   return (
     <div className='home'>
       <div className='home__curtain' />
@@ -45,7 +44,6 @@ const Home = () => {
         <ArrowDown alt='scroll down' /><p>scroll down</p>
       </div>
 
-
       <animated.div className='home__details'>
         {landingData && landingData.map((landingItem) => (
           <div className='home__details-item' key={landingItem.title}>
@@ -60,6 +58,6 @@ const Home = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default Home;

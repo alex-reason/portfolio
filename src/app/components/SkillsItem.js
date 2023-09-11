@@ -1,10 +1,9 @@
-import Image from 'next/image';
 import './styles/skillsitem.scss';
 
 const SkillsItem = ({ data }) => {
   return (
     <div className='skills-item'>
-   
+
       <div>
         <h3>{data.title}</h3>
         {data.details.map((skill) => (
@@ -13,6 +12,6 @@ const SkillsItem = ({ data }) => {
       </div>
     </div>
   )
-}
+};
 
-export default SkillsItem
+export default SkillsItem;

@@ -14,7 +14,7 @@ const Navbar = () => {
     document.querySelector('.your_class or #id here').scrollIntoView({
       behavior: 'smooth'
     });
-  }
+  };
 
   return (
     <nav className='nav navbar'>
@@ -29,6 +29,6 @@ const Navbar = () => {
       </Link>
     </nav>
   )
-}
+};
 
-export default Navbar
+export default Navbar;

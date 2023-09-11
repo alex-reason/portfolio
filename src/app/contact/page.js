@@ -35,6 +35,6 @@ const Contact = () => {
             <Footer />
         </>
     )
-}
+};
 
-export default Contact
+export default Contact;
