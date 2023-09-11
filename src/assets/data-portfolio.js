@@ -27,6 +27,7 @@ import proj5Pg1 from './portfolio-details/portfolio5/proj5-pg1.png';
 
 const portfolioData = [
     {
+        image: proj5Pg1,
         title: 'My Portfolio site',
         isActive: true,
         code: 'https://github.com/alex-reason/portfolio',
