@@ -29,8 +29,8 @@
         justify-content: center;
         width: 20%;
         margin: 0 auto;
-        margin-top: 2rem;
         padding: 1rem;
+        padding-top: 2rem;
         animation: 1s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
 
         @media screen and (max-width: $sm-screen) {
