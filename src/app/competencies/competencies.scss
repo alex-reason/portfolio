@@ -27,15 +27,15 @@
         position: fixed;
         z-index: 9;
         margin: 0 auto;
-        padding: 0.5rem;
+        padding: .75rem 0.5rem;
         top: 0;
-        background-color: $white;
+        background-color: $black;
         border-bottom: 3px solid $primary;
         width: 100%;
         text-align: center;
         text-transform: uppercase;
-        color: $black;
-        font-weight: 300;
+        color: $white;
+        font-weight: 500;
     }
 
     &__inactive {

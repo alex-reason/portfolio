@@ -5,6 +5,13 @@ import { landingData } from "../assets/data";
 import { BackToTop, Navbar, Footer } from "./components";
 import ArrowDown from '../assets/icons/arrow-down.svg';
 import './page.scss';
+import { Fira_Sans } from "next/font/google";
+
+const fira = Fira_Sans({
+  subsets: ['latin'],
+  variable: '--fira-font',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+})
 
 const Home = () => {
   const [scrollVal, setScrollVal] = useState(0);
@@ -27,7 +34,7 @@ const Home = () => {
   });
 
   return (
-    <div className='home'>
+    <div className={`home ${fira.variable}`}>
       <div className='home__curtain' />
       <animated.div
         className='home__title'
