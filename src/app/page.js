@@ -46,10 +46,10 @@ const Home = () => {
         <h1>Hi, I&apos;m Alexandra</h1>
         <p style={{ opacity: `${(scrollVal * 100) - 50}%` }}>Front-end web development, research, language enthusiast.</p>
       </animated.div>
-
+{/* 
       <div className='home__arrow'>
         <ArrowDown alt='scroll down' /><p>scroll down</p>
-      </div>
+      </div> */}
 
       <animated.div className='home__details'>
         {landingData && landingData.map((landingItem) => (

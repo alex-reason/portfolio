@@ -19,7 +19,7 @@ const Contact = () => {
                         </a>
                         <a className='contact__email' href='http://www.tinyurl.com/alex-reason-resume' target="_blank" rel='noopener noreferrer'>
                             <HiOutlineNewspaper />
-                            <h4>My Resume</h4>
+                            <h4>Resume</h4>
                         </a>
                     </div>
 
