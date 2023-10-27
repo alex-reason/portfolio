@@ -86,7 +86,7 @@ const certData = [
 const skillsData = [
     {
         title: 'Technology',
-        details: ['HTML, CSS, javascript', 'SASS/SCSS, React JS', 'firebase, typescript, Redux Toolkit','Visual Code Studio, Node, Git','unit-testing, version control', 'Microsoft Office suite & Google suite',],
+        details: ['HTML, CSS, javascript', 'SASS/SCSS, React JS', 'firebase, typescript, Redux Toolkit','VS code, Node, Git','unit-testing, version control', 'Microsoft Office suite & Google suite',],
         image: img5
     },
     {

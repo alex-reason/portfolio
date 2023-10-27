@@ -103,7 +103,7 @@ const portfolioData = [
             },
             {
                 detailImg: proj2Pg2,
-                detailInfo: 'The app uses firebase as a backend service. On the Dashboard, all projects or “sticky notes” are displayed. They can filtered based on who are involved in the project/sticky note. Online/offline users are also displayed on the right side.',
+                detailInfo: 'The app uses firebase as a backend service. On the Dashboard, all projects or “sticky notes” are displayed. They can be filtered based on who are involved in the project/sticky note. Online/offline users are also displayed on the right side.',
                 detailImgAlt: 'sticky notes app empty dashboard page',
             },
             {

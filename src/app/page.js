@@ -3,7 +3,6 @@ import { useScroll, animated } from "@react-spring/web";
 import { useState, useEffect } from "react";
 import { landingData } from "../assets/data";
 import { BackToTop, Navbar, Footer } from "./components";
-import ArrowDown from '../assets/icons/arrow-down.svg';
 import './page.scss';
 import { Fira_Sans } from "next/font/google";
 
