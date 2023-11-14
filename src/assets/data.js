@@ -79,6 +79,13 @@ const certData = [
         detail: 'Udemy',
         id: 'cert8',
         skills: ['backend cloud computing services', 'react and firebase',]
+    },
+    {
+        title: "WordPress",
+        url: "https://www.udemy.com/certificate/UC-502c3760-7fb7-4b04-ad50-21c3373e5154/",
+        detail: "Udemy",
+        id: "cert9",
+        skills: ["WordPress"],
     }
 
 ];
